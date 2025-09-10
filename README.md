@@ -1,5 +1,5 @@
-ReadTheory Bot
-===============
+ReadTheory.py
+=============
 
 An automated HTTP-based ReadTheory bot.
 
