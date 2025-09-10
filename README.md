@@ -8,11 +8,30 @@ An automated HTTP-based ReadTheory bot.
 This bot only works on devices with [Python](https://www.python.org/).
 
 Install dependancies
-<pre> ```pip3 install requests ``` </pre>
+```bash
+pip3 install requests
+```
+Clone the repo
+```bash
+git clone https://github.com/bot910/readtheory.py
+```
+Run the code
+```bash
+cd readtheory.py
+Python3 main.py
+```
 
 --- SETUP ---
-1. Get your authentication token from the browser developer tools.
-2. Get your user ID from the browser developer tools.
+1. Get your user ID from the browser developer tools:
+  Open your developer tools and go to the Network tab (on the top).
+  Reload the page and search for a POST request where the filename is a 8-10 numbe long string.
+  This is your user ID.
+   
+3. Get your AUTH bearer token from the browser developer tools:
+  Click on the POST request.
+  Go to the Headers tab.
+  Look under Request Headers for a Authorisation header (the value should be "Bearer ....").
+  This is your AUTH bearer token
 
 
 Visit [ReadTheory](https://www.readtheory.org/) for more info.
