@@ -27,7 +27,7 @@ Python3 main.py
 --- SETUP ---
 1. Get your user ID from the browser developer tools:
    - Open your developer tools and go to the Network tab (on the top).
-   - Reload the page and search for a POST request where the filename is a 8-10 numbe long string.
+   - Reload the website and search for a POST request where the name is a 8-10 numbe long string.
    - This is your user ID.
   
 ![Setup 1](https://i.ibb.co/QjYg24tt/Additional.png)
