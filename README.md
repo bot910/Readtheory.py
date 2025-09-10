@@ -26,6 +26,8 @@ Python3 main.py
    - Open your developer tools and go to the Network tab (on the top).
    - Reload the page and search for a POST request where the filename is a 8-10 numbe long string.
    - This is your user ID.
+  
+![Setup 1](https://i.ibb.co/twh7V1QH/Additional.png)
    
 2. Get your AUTH bearer token from the browser developer tools:
    - Click on the POST request.
@@ -33,8 +35,6 @@ Python3 main.py
    - Look under Request Headers for an Authorization header (the value should "Bearer ....").
    - This is your AUTH bearer token
 
-
-![Setup 1](https://i.ibb.co/twh7V1QH/Additional.png)
 ![Setup 2](https://i.ibb.co/M5hcVf5L/additional-2.png)
 
 
