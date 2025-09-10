@@ -3,6 +3,9 @@ ReadTheory Bot
 
 An automated HTTP-based ReadTheory bot.
 
+Answer speed ≈ 60 questions / minute
+KP speed (in my testing) ≈ 500 KP / minute 
+
 --- INSTALLATION ---
 
 This bot only works on devices with [Python](https://www.python.org/).
@@ -27,7 +30,7 @@ Python3 main.py
    - Reload the page and search for a POST request where the filename is a 8-10 numbe long string.
    - This is your user ID.
   
-![Setup 1](https://i.ibb.co/twh7V1QH/Additional.png)
+![Setup 1](https://i.ibb.co/QjYg24tt/Additional.png)
    
 2. Get your AUTH bearer token from the browser developer tools:
    - Click on the POST request.
