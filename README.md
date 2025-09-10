@@ -7,7 +7,8 @@ An automated HTTP-based ReadTheory bot.
 
 This bot only works on devices with [Python](https://www.python.org/).
 
-`requests.get()`
+Install dependancies
+<pre> ```pip3 install requests ``` </pre>
 
 --- SETUP ---
 1. Get your authentication token from the browser developer tools.
