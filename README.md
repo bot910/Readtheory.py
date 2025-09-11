@@ -70,9 +70,11 @@ The different operating modes:
 3. grade mode - choose what grade level to get to.
 ```
 
-
+<br />
 
 Visit [ReadTheory](https://www.readtheory.org/) to see for yourself, and to check your KP
 
-<p align="center">Made and developed by BOT910</p> <br />
+<p align="center">Made and developed by BOT910</p> 
+
+
 <p align="center">© 2025 BOT910</p>
