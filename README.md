@@ -8,9 +8,13 @@ An automated HTTP-based ReadTheory bot.
 Readtheory is a free online reading platform offering personalized reading comprehension exercises for students of all ages. It is also used in schools to teach English reading, sometimes even given up as homework.
 In readtheory you get KP (Knowledge Points) for answering questions correctly.
 
-**Answer speed ≈ 750 quizzes / hour  |  20 quizzes / minute**
+**Answer speed ≈ 
+750 quizzes / hour  
+20 quizzes / minute**
 
-**KP speed (in my testing) ≈ 38000 KP / hour  |  649 KP / minute**
+**KP speed (in my testing) ≈ 
+38000 KP / hour
+649 KP / minute**
 
 
 <br />
