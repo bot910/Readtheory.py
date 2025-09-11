@@ -27,23 +27,32 @@ cd readtheory.py
 Python3 main.py
 ```
 
+<br />
+
 --- SETUP ---
 1. Get your user ID from the browser developer tools:
    - Open your developer tools and go to the Network tab (on the top).
    - Reload the website and search for a POST request where the name is a 8-10 numbe long string.
    - This is your user ID.
    (if you get an http error you probably inputed the wrong userID)
-  
+
+<br />
+
 ![Setup 1](https://i.ibb.co/QjYg24tt/Additional.png)
-   
+
+<br />
+
 2. Get your AUTH bearer token from the browser developer tools:
    - Click on the POST request.
    - Go to the Headers tab.
    - Look under Request Headers for an Authorization header (the value should "Bearer ....").
    - This is your AUTH bearer token
 
+<br />
+
 ![Setup 2](https://i.ibb.co/M5hcVf5L/additional-2.png)
 
+<br />
 
 The different operating modes:
 ```
