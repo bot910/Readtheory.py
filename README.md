@@ -48,4 +48,5 @@ Python3 main.py
 Visit [ReadTheory](https://www.readtheory.org/) to see for yourself, and to check your KP
 
 Made and developed by BOT910
+
 © 2025 BOT910
