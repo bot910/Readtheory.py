@@ -74,6 +74,8 @@ The different operating modes:
 
 Visit [ReadTheory](https://www.readtheory.org/) to see for yourself, and to check your KP
 
+<br />
+
 <p align="center">Made and developed by BOT910</p> 
 
 
