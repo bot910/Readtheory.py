@@ -32,6 +32,7 @@ Python3 main.py
    - Open your developer tools and go to the Network tab (on the top).
    - Reload the website and search for a POST request where the name is a 8-10 numbe long string.
    - This is your user ID.
+   (if you get an http error you probably inputed the wrong userID)
   
 ![Setup 1](https://i.ibb.co/QjYg24tt/Additional.png)
    
