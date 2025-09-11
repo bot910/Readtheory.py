@@ -14,7 +14,7 @@ In readtheory you get KP (Knowledge Points) for answering questions correctly.
 
 **KP speed (in my testing) ≈ <br>
 38000 KP / hour <br>
-649 KP / minute**
+640 KP / minute**
 
 
 <br />
