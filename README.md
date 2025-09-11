@@ -77,7 +77,7 @@ Visit [ReadTheory](https://www.readtheory.org/) to see for yourself, and to chec
 
 <br />
 
-<p align="center">Made and developed by BOT910</p> 
+<p align="center">Made and developed by Bot910</p> 
 
 
-<p align="center">© 2025 BOT910</p>
+<p align="center">© 2025 Bot910</p>
