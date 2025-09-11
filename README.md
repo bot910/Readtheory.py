@@ -16,6 +16,7 @@ In readtheory you get KP (Knowledge Points) for answering questions correctly.
 <br />
 
 **--- INSTALLATION ---**
+
 This bot only works on devices with [Python](https://www.python.org/).
 It has been tested on linux (ubuntu), but should also work on windows.
 
