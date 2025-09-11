@@ -1,12 +1,12 @@
-**ReadTheory.py**
+**Readtheory.py**
 =============
 
-**An automated HTTP-based ReadTheory bot.**
+An automated HTTP-based ReadTheory bot.
 
 <br />
 
 Readtheory is a free online reading platform offering personalized reading comprehension exercises for students of all ages. It is also used in schools to teach English reading, sometimes even given up as homework.
-In readtheory you get KP (Knowledge Points) for answering questions correctly. (Teachers can give up homework like: get 200 KP this week)
+In readtheory you get KP (Knowledge Points) for answering questions correctly.
 
 **Answer speed ≈ 60 questions / minute**
 
@@ -15,8 +15,7 @@ In readtheory you get KP (Knowledge Points) for answering questions correctly. (
 
 <br />
 
---- INSTALLATION ---
-
+**--- INSTALLATION ---**
 This bot only works on devices with [Python](https://www.python.org/).
 It has been tested on linux (ubuntu), but should also work on windows.
 
@@ -39,7 +38,7 @@ Python3 main.py
 
 <br />
 
---- SETUP ---
+**--- SETUP ---**
 1. Get your user ID from the browser developer tools:
    - Open your developer tools and go to the Network tab (on the top).
    - Reload the website and search for a POST request where the name is a 8-10 numbe long string.
@@ -75,6 +74,6 @@ The different operating modes:
 
 Visit [ReadTheory](https://www.readtheory.org/) to see for yourself, and to check your KP
 
-Made and developed by BOT910
+<center> Made and developed by BOT910 </center>
 
-© 2025 BOT910
+<center> © 2025 BOT910 </center>
