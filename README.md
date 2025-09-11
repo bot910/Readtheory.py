@@ -9,6 +9,7 @@ Readtheory is a free online reading platform offering personalized reading compr
 In readtheory you get KP (Knowledge Points) for answering questions correctly. (Teachers can give up homework like: get 200 KP this week)
 
 Answer speed ≈ 60 questions / minute
+
 KP speed (in my testing) ≈ 500 KP / minute 
 
 
