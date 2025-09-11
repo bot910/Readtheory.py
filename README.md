@@ -44,6 +44,12 @@ Python3 main.py
 
 ![Setup 2](https://i.ibb.co/M5hcVf5L/additional-2.png)
 
+The different operating modes:
+```
+1. normal mode - fetches quiz data and answers all questions correctly.
+2. custom mode - choose what percentage of questions to answer correctly (on average).
+3. grade mode - choose what grade level to get to.
+```
 
 Visit [ReadTheory](https://www.readtheory.org/) to see for yourself, and to check your KP
 
