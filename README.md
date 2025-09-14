@@ -81,6 +81,10 @@ Visit [ReadTheory](https://www.readtheory.org/) to see for yourself, and to chec
 
 <br />
 
+If the program doesn't work the first time; google it or open a github issue.
+
+<br>
+
 <p align="center">Made and developed by Bot910</p> 
 
 
