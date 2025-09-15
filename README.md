@@ -73,6 +73,7 @@ The different operating modes:
 1. normal mode - fetches quiz data and answers all questions correctly.
 2. custom mode - choose what percentage of questions to answer correctly (on average).
 3. grade mode - choose what grade level to get to.
+   4. advanced grade mode - choose between what grades to switch between in order (e.g. 6,10,11).
 ```
 
 <br />
