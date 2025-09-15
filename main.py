@@ -7,12 +7,21 @@ import requests
 
 # dont like my code? fork and fix it yourself
 
+def clear():
+    os.system('cls' if os.name=='nt' else 'clear')
+
 def getletter(num):
     if 0 <= num <= 25:
         return chr(ord('A') + num)
 
-def clear():
-    os.system('cls' if os.name=='nt' else 'clear')
+def duplicatenumbers(lst):
+    seen = set()
+    for num in lst:
+        if isinstance(num, int):
+            if num in seen:
+                return True
+            seen.add(num)
+    return False
 
 def fetch_quiz_data(token: str, user_id: str) -> dict | str:
     url = f"https://prod.readtheory.org/quiz/student_quiz_data/{user_id}"
@@ -64,6 +73,8 @@ def post_answer(token: str, student_id: int, question_id: int, answer_id: int, e
 
 def main():
 
+    global mode, amount, correct_percentage, target_grade, target_grades, target_grade_index
+
     try:
         data = fetch_quiz_data(token, user_id)
     except requests.HTTPError as e:
@@ -107,6 +118,12 @@ def main():
                     print(f"\nReached target grade {target_grade}")
                 else:
                     print(f"Current grade: {quizgrade} / target: {target_grade}")
+
+            if mode == 4:
+                if mode == 4 and quizgrade == target_grades[target_grade_index]:
+                    print(f"\nReached target grade {target_grades[target_grade_index]}")
+                else:
+                    print(f"Current grade: {quizgrade} / target: {target_grades[target_grade_index]}")
             else:
                 print("\nCurrent quiz at grade:", quizgrade)
             print("\nFetching quiz data...\n")
@@ -118,6 +135,7 @@ def main():
             if mode == 1:
                 ansid = correct_id
                 quizlist.append((True))
+
             elif mode == 2:
                 if random.randint(0, 101) <= correct_percentage:
                     ansid = correct_id
@@ -128,6 +146,7 @@ def main():
                     else:
                         ansid = answer_ids[0]
                     quizlist.append((False))
+
             elif mode == 3:
                 if quizgrade < target_grade:
                     ansid = correct_id
@@ -138,6 +157,31 @@ def main():
                     else:
                         ansid = answer_ids[0]
                     quizlist.append((False))
+
+            elif mode == 4:
+                if quizgrade < target_grades[target_grade_index]:
+                    ansid = correct_id
+                    quizlist.append((True))
+                elif quizgrade > target_grades[target_grade_index]:
+                    if answer_ids[0] == correct_id:
+                        ansid = answer_ids[1]
+                    else:
+                        ansid = answer_ids[0]
+                    quizlist.append((False))
+                else:
+                    target_grade_index += 1
+                    if target_grade_index >= len(target_grades):
+                        target_grade_index = 0
+                    if quizgrade < target_grades[target_grade_index]:
+                        ansid = correct_id
+                        quizlist.append((True))
+                    elif quizgrade > target_grades[target_grade_index]:
+                        if answer_ids[0] == correct_id:
+                            ansid = answer_ids[1]
+                        else:
+                            ansid = answer_ids[0]
+                        quizlist.append((False))
+
             
             print("\nSubmitting answer: ", getletter(answer_ids.index(ansid)))
             try:
@@ -186,25 +230,44 @@ user_id = input("User ID (e.g. 25384163): ").strip()
 print("Choose an operating mode:\n")
 print("  1. normal mode - fetches quiz data and answers all questions correctly")
 print("  2. custom mode - choose what percentage of questions to answer correctly")
-print("  3. grade mode - choose what grade level to get to.)\n")
+print("  3. grade mode - choose what grade level to get to.)")
+print("      4. advanced grade mode, input as many grades to switch between in order (e.g. 6,10,11)\n")
 
-mode = int(input("Enter mode (1, 2 or 3): ").strip())
+mode = int(input("Enter mode (1, 2, 3 or 4): ").strip())
 
-if mode not in {1, 2, 3}:
+if mode not in {1, 2, 3, 4}:
     print("Invalid mode selected, exiting.")
     sys.exit(1)
 
 if mode == 1:
     amount = int(input("Amount of times to run (e.g. 50):").strip())
+
 elif mode == 2:
     amount = int(input("Amount of times to run (e.g. 50):").strip())
     correct_percentage = int(input("Correct answer percentage (0-100): ").strip())
     if not (-1 <= correct_percentage <= 101):
         print("Invalid percentage, exiting.")
         sys.exit(1)
+
 elif mode == 3:
     target_grade = int(input("Target grade level (1-12): ").strip())
     amount=9999
+
+elif mode == 4:
+    grades_input = input("Enter target grades separated by commas (e.g. 6,10,11): ").strip()
+    target_grades = [int(g) for g in grades_input.split(',') if 1 <= int(g) <= 12]
+
+    if not target_grades:
+        print("Invalid grades input, exiting.")
+        sys.exit(1)
+        
+    if duplicatenumbers(target_grades):
+        print("Duplicate grades found, exiting.")
+        sys.exit(1)
+
+    amount=9999
+    target_grade = target_grades[0]
+    target_grade_index = 0
 
 time.sleep(1)
 
