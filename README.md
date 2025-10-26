@@ -38,7 +38,7 @@ git clone https://github.com/bot910/readtheory.py
 Run the code
 ```bash
 cd readtheory.py
-Python3 main.py
+python3 main.py
 ```
 
 <br />
