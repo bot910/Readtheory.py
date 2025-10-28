@@ -29,7 +29,7 @@ It has been tested on linux (ubuntu), but should also work on windows.</p>
 
 Install dependancies
 ```bash
-pip3 install requests
+pip install requests
 ```
 Clone the repo
 ```bash
@@ -38,7 +38,7 @@ git clone https://github.com/bot910/readtheory.py
 Run the code
 ```bash
 cd readtheory.py
-python3 main.py
+python main.py
 ```
 
 <br />
